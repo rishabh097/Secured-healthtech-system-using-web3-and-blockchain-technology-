@@ -1,0 +1,117 @@
+<html>
+<head>
+    <title>Register Doctor</title>
+    <link rel="icon" href="ff.jpg" type="image/icon type">
+    <style>
+        body {
+            background-image: url("detail.jpeg"); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            border-radius: 5px;
+            margin-left: 20%;
+            margin-right: 20%;
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+        }
+		p {
+            margin-top: 50px; 
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="button"] {
+            width: 60%;
+            background-color: #4caf50;
+            color: white;
+            padding: 14px 20px;
+            margin: 20px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+
+        button {
+            border: 2px solid white;
+            background-color: rgba(187, 221, 240, 0.856);
+            color: black;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: transparent;
+            color: black;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <a href="hospital.html"><button type="submit" class="hidden" style='margin-right:16px'>Hospital Registration</button></a>
+        <a href="patient.html"><button type="submit" class="hidden" style='margin-right:16px'>Patient Registration</button></a>
+        <a href="patient_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Patient Details</button></a>
+        <a href="record_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Medical Record</button></a>
+        <a href="examine_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Patient Examine details</button></a>
+    </p>
+
+    <h1>Doctor Registration</h1>
+
+    <h2>Register Doctor</h2>
+    <div>
+        <form>
+            <table style="width:100%">
+                <tr>
+                    <td>Enter Doctor Id:</td>
+                    <td><input type="text" id="id1" name="id1"></td>
+                </tr>
+                <tr>
+                    <td>Doctor Name:</td>
+                    <td><input type="text" id="name1" name="name1"></td>
+                </tr>
+                <tr>
+                    <td>Doctor Specification:</td>
+                    <td><input type="text" id="spec" name="spec"></td>
+                </tr>
+                <tr>
+                    <td>Doctor Phone Number:</td>
+                    <td><input type="text" id="pno" name="pno"></td>
+                </tr>
+                <tr>
+                    <td>Doctor Address:</td>
+                    <td><input type="text" id="addr" name="addr"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick="add_details()" value="Register"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <h3>To get details of a doctor <a href="doctor_details.html">Click Here</a></h3>
+</body>
+</html>
